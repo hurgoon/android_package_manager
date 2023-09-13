@@ -20,11 +20,6 @@ abstract class AndroidPackageManager {
   static final AndroidPackageManager _pm = AndroidPackageManagerImpl();
 
   factory AndroidPackageManager() {
-    if (!Platform.isAndroid) {
-      throw StateError(
-        "Can only be run on Android devices",
-      );
-    }
     return _pm;
   }
 
